@@ -25,7 +25,7 @@ nav {
 nav ul {
     display: flex;
     list-style: none;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding: 0px;
 }
 
@@ -36,9 +36,13 @@ article {
     padding: 10px;
 }
 
+article img {
+    padding: 10px ;
+}
+
 footer {
     border: 5px solid #ADC7BD;
-    background-color: #97B8AB;
+    background-color: #61726B;
     padding: 10px;
     text-align: center;
 }

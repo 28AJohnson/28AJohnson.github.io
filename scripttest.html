@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Test</title>
+    <script src="js/formpixbrowser.js"></script>
+</head>
+<body>
+    <div id="cookieCount"></div>
+    <button onclick="increaseCookie()">
+        Click Here for Cookie!
+    </button>
+</body>
+
+    <script>
+        var cookies = 0;
+        function increaseCookie() {
+            cookie++;
+            document.getElementById("cookieCount").innerText = "Cookie: " + cookies;
+        }
+
+    formPixAPI.login("http://172.16.3.101:421", "97e289697ca5b4b50095a9f701f8e6272140b4a99a2785a1312792e32064a28a32a6753b869aa4846b677508cb5598026f138f4fe2cfc1e7787c1d72efc374ab");
+
+        formPixAPI.say("Hello world!", "#ff0000", "#000000")
+
+    </script>
+    
+</html>

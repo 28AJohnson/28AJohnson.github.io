@@ -1,35 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+<title>My Website</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+img {
+    width: 145px;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
 </head>
 <body>
-    <header>
-        <h1>My website</h1>
-    </header>
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="index.html">Get To School 6</a></li>
-        </ul>
-    </nav>
-    <article>
-        <h2>Article 1</h2>
-        <img src="img/Shrek-running.png" alt="Has layer">
-        <p>This is some placeholder text.</p>
-    </article>
-    <article>
-        <h2>Article 1</h2>
-        <img src="img/york_county_school_of_technology_ycst_logo.jpg" alt="Has layer">
-        <img src="28b28fa7-5e1a-404d-b34d-e38991762fda-210828_djs_York_Tech_Hamburg_fball_02" alt="Has layer">
-        <p>Hi, my name is Aiden and I go to York County School of Technology for Information Technology. I play football, basketball, track.</p>
-    </article>
-    <footer>
-        This website was designed by C.Smith in 2025
-    </footer>
+  
+<h2>My Website</h2>
+<p> By: Aiden Johnson</p>
+<p>                                                                                                                       </p>
+
+<header>
+  <h2>My Website</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <li><a href="http://127.0.0.1:5500/index.html">Home</a></li>
+        <li><a href="http://127.0.0.1:5500/about.html">About</a></li>
+        <li><a href="http://127.0.0.1:5500/game/indexgame.html">Get To School 6</a></li>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1>My website</h1>
+    <p>Hi my name is Aiden and this is my website.</p>
+    <p>Links to the other things are on the left.</p>
+    <img src="img/york_county_school_of_technology_ycst_logo.jpg" alt="">
+  </article>
+</section>
+
+<footer>
+  <p>        This website was designed by A.Johnson in 2025</p>
+</footer>
+
 </body>
 </html>
+
